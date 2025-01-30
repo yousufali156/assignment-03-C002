@@ -1,26 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nature's Platter</title>
-    
-</head>
-<body>
-    <!--Header Section -->
-     <header>
 
-     </header>
+    <!-- Tailwind Cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind Custom -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'primary-color': '#179800',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- DaisyUi Cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+    <style>
+        .font-sora {
+            font-family: "Sora", serif;
+        }
+        .primary-btn{
+            font-size: 1.25rem;
+            padding: 8px 20px;
+            border-radius: 8px;
+        }
+       
+    </style>
+
+
+</head>
+
+<body class="font-sora container mx-auto">
+    <!--Header Section -->
+    <header>
+
+        <!-- Navbar Style -->
+        <nav class="container mx-auto  px-4 py-4 flex justify-between items-center 
+         border-b-2 md:border-b-0 border-[#179800]">
+
+            <div class="navbar">
+                <div class="flex-1 sm:flex-auto">
+                    <img src="c2-assets/logo-header.png" alt="My Website Logo">
+                </div>
+                <!-- Navbar All -->
+                <ul class="gap-7 lg:flex hidden cursor-pointer text-xl ">
+                    <li><a href="#">Product</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+                <div class="hidden md:flex gap-5 pl-28 ">
+                    <!-- Search Icon -->
+                    <img class="cursor-pointer lg:inline sm:hidden " src="c2-assets/icon/nav-search.svg" alt="Search Icon">
+                    <!-- Cart Icon -->
+                    <img class="cursor-pointer lg:inline sm:hidden" src="c2-assets/icon/nav-cart.svg" alt="Cart Icon">
+                    <button class="text-xl cursor-pointer primary-btn rounded-lg border-2 border-[#179800] ">Login</button>
+                    <button class="text-xl cursor-pointer text-white rounded-lg bg-[#179800] primary-btn">Register</button>
+                </div>           
+                     <!-- Hamburg Icon -->
+                <span>
+                    <button><img class=" cursor-pointer md:hidden" src="c2-assets/icon/nav-hamburg.svg" alt="Hamburg Menu"></button>
+                </span>
+
+            </div>
+        </nav>
+
+        <!-- Hero Section Start -->
+        <div class=" pt-10 mt-10 space-y-5 bg-gradient-to-r from-[#7be6a848] to-[#a8f7c92c]">
+            <h1 class="text-6xl font-bold text-center">Freshness <span class="text-[#179800]">You Can <br>Count On</span>, Prices You'll Love!</h1>
+            <p class="text-gray-500 text-center">Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br> staples, we've got you covered every day!</p>
+            <img class="mx-auto" src="c2-assets/hero-vegetables.png" alt="">
+        </div>
+
+    </header>
 
     <!--Main Section -->
-     <Main>
+    <Main>
 
-     </Main>
+    </Main>
 
     <!--Footer Section -->
-     <footer>
+    <footer>
 
-     </footer>
-    
+    </footer>
+
 </body>
+
 </html>
