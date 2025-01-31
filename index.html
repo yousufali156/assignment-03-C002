@@ -76,10 +76,10 @@
                     <img src="c2-assets/logo-header.png" alt="My Website Logo">
                 </div>
                 <!-- Navbar All -->
-                <ul class="gap-7 lg:flex hidden cursor-pointer text-xl ">
-                    <li><a href="#">Product</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Contact Us</a></li>
+                <ul class="gap-7 lg:flex hidden cursor-pointer text-xl">
+                    <li><a class="hover:text-green-400" href="#">Product</a></li>
+                    <li><a class="hover:text-green-400" href="#">Services</a></li>
+                    <li><a class="hover:text-green-400" href="#">Contact Us</a></li>
                 </ul>
                 <div class="hidden md:flex gap-5 pl-28 ">
                     <!-- Search Icon -->
@@ -88,13 +88,13 @@
                     <!-- Cart Icon -->
                     <img class="cursor-pointer lg:inline sm:hidden" src="c2-assets/icon/nav-cart.svg" alt="Cart Icon">
                     <button
-                        class="text-xl cursor-pointer primary-btn rounded-lg border-2 border-[#179800] ">Login</button>
+                        class="hover:bg-green-700 hover:text-white text-xl cursor-pointer primary-btn rounded-lg border-2 border-[#179800]">Login</button>
                     <button
-                        class="text-xl cursor-pointer text-white rounded-lg bg-[#179800] primary-btn">Register</button>
+                        class="hover:bg-green-500 hover:text-black text-xl cursor-pointer text-white rounded-lg bg-[#179800] primary-btn">Register</button>
                 </div>
                 <!-- Hamburg Icon -->
                 <span>
-                    <button><img class=" cursor-pointer md:hidden" src="c2-assets/icon/nav-hamburg.svg"
+                    <button><img class="hover:bg-green-200 cursor-pointer md:hidden" src="c2-assets/icon/nav-hamburg.svg"
                             alt="Hamburg Menu"></button>
                 </span>
 
@@ -121,31 +121,28 @@
                 <!--All Card -->
                 <div class="mt-9 p-5 lg:mt-14 grid md:mx-auto gap-6 grid-cols-1 lg:grid-cols-3 text-center ">
                     <!-- Card-1 -->
-                    <div class="p-5 rounded-2xl space-y-5 bg-[#EFEBE3] ">
+                    <div class="group hover:bg-green-500 p-5 rounded-2xl space-y-5 bg-[#EFEBE3] ">
                         <img class="bg-white rounded-full p-4 mx-auto" src="c2-assets/service.png" alt="Service Image">
-                        <h3 class="font-semibold ">24/7 Services</h3>
-                        <p class="text-gray-500">24/7 services refer to round-the-clock availability, ensuring help or
+                        <h3 class="group-hover:text-white font-semibold ">24/7 Services</h3>
+                        <p class="group-hover:text-white text-gray-500">24/7 services refer to round-the-clock availability, ensuring help or
                             assistance is provided at any time of day or night. Whether it's customer support, emergency
                             services, or technical help, these services are always accessible.</p>
                     </div>
 
                     <!-- Card-2 -->
-                    <div class="p-5 rounded-2xl  space-y-5 bg-[#EFEBE3]">
+                    <div class="group hover:bg-green-500 p-5 rounded-2xl  space-y-5 bg-[#EFEBE3]">
                         <img class="bg-white rounded-full p-4 mx-auto" src="c2-assets/delivery.png" alt="Service Image">
-                        <h3 class="font-semibold ">Fast Delivery</h3>
-                        <p class="text-gray-500">Fast delivery ensures quick and efficient transportation of goods to
+                        <h3 class=" group-hover:text-white font-semibold ">Fast Delivery</h3>
+                        <p class=" group-hover:text-white text-gray-500">Fast delivery ensures quick and efficient transportation of goods to
                             customers, minimizing wait times. It enhances customer satisfaction by providing timely
                             service.
                         </p>
                     </div>
                     <!-- Card-3 -->
-                    <div class="p-5 rounded-2xl space-y-5 bg-[#EFEBE3]">
+                    <div class="group hover:bg-green-500 p-5 rounded-2xl space-y-5 bg-[#EFEBE3]">
                         <img class="bg-white rounded-full p-4 mx-auto" src="c2-assets/healthy.png" alt="Service Image">
-                        <h3 class="font-semibold ">Healthy Products</h3>
-                        <p class="text-gray-500">Healthy products are those that promote well-being, offering
-                            nutritional
-                            benefits and supporting a balanced lifestyle. They are often natural, organic, and free from
-                            harmful additives.</p>
+                        <h3 class=" group-hover:text-white font-semibold ">Healthy Products</h3>
+                        <p class="group-hover:text-white text-gray-500">Healthy products are those that promote well-being, offering nutritional benefits and supporting a balanced lifestyle. They are often natural, organic, and free from harmful additives.</p>
                     </div>
 
                 </div>
@@ -163,11 +160,11 @@
 
                     <!-- Green Card -->
                     <div
-                        class="overflow-hidden pt-8 lg:pt-10 pl-3 lg:pl-6 bg-gradient-to-r from-[#52e944cc] to-[#0aeb6742] rounded-lg">
-                        <h2 class=" text-white text-2xl font-semibold ">30% Off</h2>
-                        <p class="font-xl px-2 py-4">Enjoy a 30% discount on all vegetable products, <br> bringing you
+                        class="group hover:bg-green-500 overflow-hidden pt-8 lg:pt-10 pl-3 lg:pl-6 bg-gradient-to-r from-[#52e944cc] to-[#0aeb6742] rounded-lg">
+                        <h2 class="group-hover:text-black text-white text-2xl font-semibold ">30% Off</h2>
+                        <p class="group-hover:text-white font-xl px-2 py-4">Enjoy a 30% discount on all vegetable products, <br> bringing you
                             fresh and healthy <br> choices at a great price!</p>
-                        <button class="text-xl bg-white px-6 py-2 rounded-lg">Buy Now</button>
+                        <button class="hover:bg-green-500 hover:text-white text-xl bg-white px-6 py-2 rounded-lg">Buy Now</button>
                         <div class="relative left-24 sm:left-64 lg:left-20 lg:top-14 xl:left-36 xl:top-1">
                             <img class="w-[180px]" src="c2-assets/vegetable-offer.png" alt="Offer Image">
                         </div>
@@ -178,7 +175,7 @@
 
                             <!-- Card-1 -->
                             <div
-                                class="flex items-center gap-2 md:gap-6 bg-white py-[10px] md:py-4 px-[10px] md:px-3 rounded-lg lg:rounded-lg">
+                                class="hover:bg-gradient-to-t from-green-300 via-green-400 to-green-500 transition-all duration-300 ease-in-out flex items-center gap-2 md:gap-6 bg-white py-[10px] md:py-4 px-[10px] md:px-3 rounded-lg lg:rounded-lg">
                                 <div>
                                     <img class="w-12 md:w-full " src="c2-assets/icon/onion.png" alt="Onion" />
                                 </div>
@@ -193,7 +190,7 @@
                             </div>
                             <!-- Card-2 -->
                             <div
-                                class="flex items-center gap-2 md:gap-6 bg-white py-[10px] md:py-4 px-[10px] md:px-3 rounded-lg lg:rounded-lg">
+                                class="hover:bg-gradient-to-t from-green-300 via-green-400 to-green-500 transition-all duration-300 ease-in-out flex items-center gap-2 md:gap-6 bg-white py-[10px] md:py-4 px-[10px] md:px-3 rounded-lg lg:rounded-lg">
                                 <div>
                                     <img class="w-12 md:w-full " src="c2-assets/icon/potato.png" alt="Potato" />
                                 </div>
@@ -208,7 +205,7 @@
                             </div>
                             <!-- Card-3 -->
                             <div
-                                class="hidden lg:flex items-center gap-2 md:gap-6 bg-white py-[10px] md:py-4 px-[10px] md:px-3 rounded-lg lg:rounded-lg">
+                                class="hover:bg-gradient-to-t from-green-300 via-green-400 to-green-500 transition-all duration-300 ease-in-out hidden lg:flex items-center gap-2 md:gap-6 bg-white py-[10px] md:py-4 px-[10px] md:px-3 rounded-lg lg:rounded-lg">
                                 <div>
                                     <img class="w-12 md:w-full " src="c2-assets/icon/tomato.png" alt="Tomato" />
                                 </div>
@@ -223,7 +220,7 @@
                             </div>
                             <!-- Card-4 -->
                             <div
-                                class="flex items-center gap-2 md:gap-6 bg-white py-[10px] md:py-4 px-[10px] md:px-3 rounded-lg lg:rounded-lg">
+                                class="hover:bg-gradient-to-t from-green-300 via-green-400 to-green-500 transition-all duration-300 ease-in-out flex items-center gap-2 md:gap-6 bg-white py-[10px] md:py-4 px-[10px] md:px-3 rounded-lg lg:rounded-lg">
                                 <div>
                                     <img class="w-12 md:w-full " src="c2-assets/icon/tomato.png" alt="Tomato" />
                                 </div>
@@ -238,7 +235,7 @@
                             </div>
                             <!-- Card-5 -->
                             <div
-                                class="flex items-center gap-2 md:gap-6 bg-white py-[10px] md:py-4 px-[10px] md:px-3 rounded-lg lg:rounded-lg">
+                                class="hover:bg-gradient-to-t from-green-300 via-green-400 to-green-500 transition-all duration-300 ease-in-out flex items-center gap-2 md:gap-6 bg-white py-[10px] md:py-4 px-[10px] md:px-3 rounded-lg lg:rounded-lg">
                                 <div>
                                     <img class="w-12 md:w-full " src="c2-assets/icon/onion.png" alt="Onion" />
                                 </div>
@@ -253,7 +250,7 @@
                             </div>
                             <!-- Card-6 -->
                             <div
-                                class="flex items-center gap-2 md:gap-6 bg-white py-[10px] md:py-4 px-[10px] md:px-3 rounded-lg lg:rounded-lg">
+                                class="hover:bg-gradient-to-t from-green-300 via-green-400 to-green-500 transition-all duration-300 ease-in-out flex items-center gap-2 md:gap-6 bg-white py-[10px] md:py-4 px-[10px] md:px-3 rounded-lg lg:rounded-lg">
                                 <div>
                                     <img class="w-12 md:w-full " src="c2-assets/icon/potato.png" alt="Potato" />
                                 </div>
@@ -269,7 +266,7 @@
 
                             <!-- Card-7 -->
                             <div
-                                class="flex items-center gap-2 md:gap-6 bg-white py-[10px] md:py-4 px-[10px] md:px-3 rounded-lg lg:rounded-lg">
+                                class="hover:bg-gradient-to-t from-green-300 via-green-400 to-green-500 transition-all duration-300 ease-in-out flex items-center gap-2 md:gap-6 bg-white py-[10px] md:py-4 px-[10px] md:px-3 rounded-lg lg:rounded-lg">
                                 <div>
                                     <img class="w-12 md:w-full " src="c2-assets/icon/potato.png" alt="Potato" />
                                 </div>
@@ -284,7 +281,7 @@
                             </div>
                             <!-- Card-8 -->
                             <div
-                                class="flex items-center gap-2 md:gap-6 bg-white py-[10px] md:py-4 px-[10px] md:px-3 rounded-lg lg:rounded-lg">
+                                class="hover:bg-gradient-to-t from-green-300 via-green-400 to-green-500 transition-all duration-300 ease-in-out flex items-center gap-2 md:gap-6 bg-white py-[10px] md:py-4 px-[10px] md:px-3 rounded-lg lg:rounded-lg">
                                 <div>
                                     <img class="w-12 md:w-full " src="c2-assets/icon/tomato.png" alt="Tomato" />
                                 </div>
@@ -299,7 +296,7 @@
                             </div>
                             <!-- Card-9 -->
                             <div
-                                class="flex items-center gap-2 md:gap-6 bg-white py-[10px] md:py-4 px-[10px] md:px-3 rounded-lg lg:rounded-lg">
+                                class="hover:bg-gradient-to-t from-green-300 via-green-400 to-green-500 transition-all duration-300 ease-in-out flex items-center gap-2 md:gap-6 bg-white py-[10px] md:py-4 px-[10px] md:px-3 rounded-lg lg:rounded-lg">
                                 <div>
                                     <img class="w-12 md:w-full " src="c2-assets/icon/onion.png" alt="Onion" />
                                 </div>
@@ -376,7 +373,7 @@
                     <div class="text-center space-y-3 md:space-y-8">
                         <img src="c2-assets/dawat-logo.png" alt="Card Logo">
                         <button
-                            class="bg-[#63B76D] px-[18px] text-white py-2 md:px-8 md:py-[14px] text-xs md:text-2xl rounded-lg">Cook
+                            class="hover:bg-green-500 hover:text-base bg-[#63B76D] px-[18px] text-white py-2 md:px-8 md:py-[14px] text-xs md:text-2xl rounded-lg">Cook
                             Exotic Dishes</button>
                         <h3 class="text-xl md:text-[39px]">UP to <span class="font-bold">20% OFF</span></h3>
                     </div>
@@ -391,7 +388,7 @@
                     <div class="text-center space-y-3 md:space-y-8">
                         <img src="c2-assets/india-gate-logo.png" alt="Card Logo">
                         <button
-                            class="bg-[#2A4D97] px-[18px] text-white py-2 md:px-8 md:py-[14px] text-xs md:text-2xl rounded-lg">World's
+                            class="hover:bg-sky-400 hover:text-base bg-[#2A4D97] px-[18px] text-white py-2 md:px-8 md:py-[14px] text-xs md:text-2xl rounded-lg">World's
                             No.1 Rice</button>
                         <h3 class="text-xl md:text-[39px]">UP to <span class="font-bold">40% OFF</span></h3>
                     </div>
@@ -417,7 +414,7 @@
                 <div
                     class="bg-[#EFEBE3] lg:container sm:mx-auto flex flex-col md:flex-row items-center gap-6 lg:gap-1 justify-around rounded-2xl lg:rounded-3xl px-1 lg:px-16 py-6 md:py-12">
                     <div>
-                        <img src="c2-assets/vegetable-busket.png" alt="Vegetable Image">
+                        <img class="transition-all duration-300 hover:scale-110" src="c2-assets/vegetable-busket.png" alt="Vegetable Image">
                     </div>
                     <div class="text-center md:text-justify">
                         <h3 class="text-[#179800] md:text-black font-bold md:font-semibold text-[26px] lg:text-4xl">Get
@@ -426,10 +423,10 @@
                             deals and more.</p>
                         <form action="">
                             <input type="email" placeholder="Enter email...."
-                                class="mt-5 mb-3 rounded-md lg:rounded-lg py-[6px] lg:py-3 pl-2 lg:pl-4 pr-20 lg:pr-64 lg:my-9" />
+                                class="focus:border-sky-500 focus:outline-2 focus:outline-sky-500 text-black mt-5 mb-3 rounded-md lg:rounded-lg py-[6px] lg:py-3 pl-2 lg:pl-4 pr-20 lg:pr-64 lg:my-9" />
                         </form>
                         <button
-                            class="bg-[#179800] text-white px-6 lg:px-7 py-2 lg:py-[10px] text-sm lg:text-xl rounded-lg">Subscribe</button>
+                            class="hover:bg-green-600 hover:text-black bg-[#179800] text-white px-6 lg:px-7 py-2 lg:py-[10px] text-sm lg:text-xl rounded-lg">Subscribe</button>
                     </div>
                 </div>
             </div>
@@ -442,18 +439,18 @@
                 </p>
             </div>
             <div class="cursor-pointer space-y-5 lg:space-y-8">
-                <a class="text-base lg:text-xl">Products</a>
-                <a class="text-base lg:text-xl ">Services</a>
-                <a class="text-base lg:text-xl">Contact Us</a>
+                <a class="hover:text-green-400 text-base lg:text-xl">Products</a>
+                <a class="hover:text-green-400 text-base lg:text-xl ">Services</a>
+                <a class="hover:text-green-400 text-base lg:text-xl">Contact Us</a>
             </div>
             <div class="lg:pt-28">
                 <a class="font-normal lg:font-medium text-sm lg:text-base">Follow Us</a>
                 <div class="cursor-pointer text-white space-x-4 align-text-bottom">
-                    <a href="#"><i class="fa-brands fa-square-github"></i></a>
-                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="hover:text-blue-800 fa-brands fa-square-github"></i></a>
+                    <a href="#"><i class="hover:text-blue-800 fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="hover:text-blue-800 fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="hover:text-blue-800 fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="hover:text-blue-800 fa-brands fa-youtube"></i></a>
                 </div>
             </div>
         </div>
