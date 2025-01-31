@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nature's Platter</title>
 
+    <link rel="shortcut icon" href="c2-assets/icon/fav-icon.ico" type="image/x-icon">
     <!-- Tailwind Cdn -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Tailwind Custom -->
@@ -25,15 +26,27 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- Google Font -->
+    <!-- Sora Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <!-- Poppins Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
     <!-- Font Awesome Kit -->
     <script src="https://kit.fontawesome.com/76c3f9f184.js" crossorigin="anonymous"></script>
+
     <style>
         .font-sora {
             font-family: "Sora", serif;
+        }
+
+        .font-poppins {
+            font-family: "Poppins", serif;
         }
 
         .primary-btn {
@@ -44,7 +57,6 @@
 
         section {
             margin-top: 50px;
-            margin-bottom: 50px;
         }
     </style>
 
@@ -104,37 +116,40 @@
     <Main>
         <!-- Services Section Start -->
         <section class="container mx-auto">
-            <h1 class="text-2xl lg:text-4xl font-bold text-[#179800]">Services</h1>
-            <!--All Card -->
-            <div class="mt-9 p-5 lg:mt-14 grid md:mx-auto gap-6 grid-cols-1 lg:grid-cols-3 text-center ">
-                <!-- Card-1 -->
-                <div class="p-5 rounded-2xl space-y-5 bg-[#EFEBE3] ">
-                    <img class="bg-white rounded-full p-4 mx-auto" src="c2-assets/service.png" alt="Service Image">
-                    <h3 class="font-semibold ">24/7 Services</h3>
-                    <p class="text-gray-500">24/7 services refer to round-the-clock availability, ensuring help or
-                        assistance is provided at any time of day or night. Whether it's customer support, emergency
-                        services, or technical help, these services are always accessible.</p>
-                </div>
+            <div class="container px-2 mx-auto">
+                <h1 class="font-bold text-[#179800] text-2xl lg:text-4xl ml-5">Services</h1>
+                <!--All Card -->
+                <div class="mt-9 p-5 lg:mt-14 grid md:mx-auto gap-6 grid-cols-1 lg:grid-cols-3 text-center ">
+                    <!-- Card-1 -->
+                    <div class="p-5 rounded-2xl space-y-5 bg-[#EFEBE3] ">
+                        <img class="bg-white rounded-full p-4 mx-auto" src="c2-assets/service.png" alt="Service Image">
+                        <h3 class="font-semibold ">24/7 Services</h3>
+                        <p class="text-gray-500">24/7 services refer to round-the-clock availability, ensuring help or
+                            assistance is provided at any time of day or night. Whether it's customer support, emergency
+                            services, or technical help, these services are always accessible.</p>
+                    </div>
 
-                <!-- Card-2 -->
-                <div class="p-5 rounded-2xl  space-y-5 bg-[#EFEBE3]">
-                    <img class="bg-white rounded-full p-4 mx-auto" src="c2-assets/delivery.png" alt="Service Image">
-                    <h3 class="font-semibold ">Fast Delivery</h3>
-                    <p class="text-gray-500">Fast delivery ensures quick and efficient transportation of goods to
-                        customers, minimizing wait times. It enhances customer satisfaction by providing timely service.
-                    </p>
-                </div>
-                <!-- Card-3 -->
-                <div class="p-5 rounded-2xl space-y-5 bg-[#EFEBE3]">
-                    <img class="bg-white rounded-full p-4 mx-auto" src="c2-assets/healthy.png" alt="Service Image">
-                    <h3 class="font-semibold ">Healthy Products</h3>
-                    <p class="text-gray-500">Healthy products are those that promote well-being, offering nutritional
-                        benefits and supporting a balanced lifestyle. They are often natural, organic, and free from
-                        harmful additives.</p>
-                </div>
+                    <!-- Card-2 -->
+                    <div class="p-5 rounded-2xl  space-y-5 bg-[#EFEBE3]">
+                        <img class="bg-white rounded-full p-4 mx-auto" src="c2-assets/delivery.png" alt="Service Image">
+                        <h3 class="font-semibold ">Fast Delivery</h3>
+                        <p class="text-gray-500">Fast delivery ensures quick and efficient transportation of goods to
+                            customers, minimizing wait times. It enhances customer satisfaction by providing timely
+                            service.
+                        </p>
+                    </div>
+                    <!-- Card-3 -->
+                    <div class="p-5 rounded-2xl space-y-5 bg-[#EFEBE3]">
+                        <img class="bg-white rounded-full p-4 mx-auto" src="c2-assets/healthy.png" alt="Service Image">
+                        <h3 class="font-semibold ">Healthy Products</h3>
+                        <p class="text-gray-500">Healthy products are those that promote well-being, offering
+                            nutritional
+                            benefits and supporting a balanced lifestyle. They are often natural, organic, and free from
+                            harmful additives.</p>
+                    </div>
 
+                </div>
             </div>
-
         </section>
 
         <!-- Popular Products -->
@@ -144,17 +159,18 @@
 
                 <h1 class="pb-8 lg:pb-12 font-bold text-[#179800] text-2xl lg:text-4xl">Popular Products</h1>
 
-                <div class="grid  gap-6 lg:grid-cols-3">
+                <div class="grid gap-6 lg:grid-cols-3">
 
                     <!-- Green Card -->
-                    <div class="overflow-hidden pt-8 lg:pt-10 pl-3 lg:pl-6 bg-gradient-to-r from-[#52e944cc] to-[#0aeb6742] rounded-lg">
+                    <div
+                        class="overflow-hidden pt-8 lg:pt-10 pl-3 lg:pl-6 bg-gradient-to-r from-[#52e944cc] to-[#0aeb6742] rounded-lg">
                         <h2 class=" text-white text-2xl font-semibold ">30% Off</h2>
-                        <p class="font-xl px-2 py-4">Enjoy a 30% discount on all vegetable products, <br> bringing you fresh and healthy <br> choices at a great price!</p>
+                        <p class="font-xl px-2 py-4">Enjoy a 30% discount on all vegetable products, <br> bringing you
+                            fresh and healthy <br> choices at a great price!</p>
                         <button class="text-xl bg-white px-6 py-2 rounded-lg">Buy Now</button>
-                        <div class="relative left-24 sm:left-64 lg:left-20 lg:top-14  xl:left-36 xl:top-1">
+                        <div class="relative left-24 sm:left-64 lg:left-20 lg:top-14 xl:left-36 xl:top-1">
                             <img class="w-[180px]" src="c2-assets/vegetable-offer.png" alt="Offer Image">
                         </div>
-
                     </div>
 
                     <div class="lg:col-span-2">
@@ -306,11 +322,12 @@
 
         <!-- Carousel Section Start -->
         <section class="container mx-auto">
-
             <div class="text-center lg:w-4/6 mx-auto">
-                <h2 class="text-[#179800] text-3xl lg:text-[40px] font-bold pb-6">Welcome to My Grocery Shop</h2>
-                <p class="text-slate-900 font-semibold pb-6">"Fresh, local, and always affordable your one-stop grocery shop! Stop by today for the best deals on all your essentials.
-                <br> <span class="text-[#179800]">Shop smarter, live better!</span> "</p>
+                <h2 class="lg:pb-12 font-bold text-[#179800] text-2xl lg:text-4xl pb-8">Welcome to My Grocery Shop</h2>
+                <p class="text-slate-900 font-semibold pb-6">"Fresh, local, and always affordable your one-stop grocery
+                    shop! Stop by today for the best deals on all your essentials.
+                    <br> <span class="text-[#179800]">Shop smarter, live better!</span> "
+                </p>
             </div>
 
             <!-- Carousel Style -->
@@ -346,11 +363,104 @@
             </div>
         </section>
 
+        <!-- Arrival Section Start -->
+        <section class="container px-4 py-12 mx-auto">
+
+            <h1 class="lg:pb-12 font-bold text-[#179800] text-2xl lg:text-4xl pb-8">Arrival & Offers</h1>
+
+            <div class="grid font-poppins lg:grid-cols-5 gap-4 md:gap-5 text-white">
+
+                <!-- Dawat Card -->
+                <div
+                    class="bg-[#115414] md:col-span-3 flex items-center  rounded-lg md:rounded-3xl justify-around p-2 md:pt-6">
+                    <div class="text-center space-y-3 md:space-y-8">
+                        <img src="c2-assets/dawat-logo.png" alt="Card Logo">
+                        <button
+                            class="bg-[#63B76D] px-[18px] text-white py-2 md:px-8 md:py-[14px] text-xs md:text-2xl rounded-lg">Cook
+                            Exotic Dishes</button>
+                        <h3 class="text-xl md:text-[39px]">UP to <span class="font-bold">20% OFF</span></h3>
+                    </div>
+                    <div>
+                        <img src="c2-assets/dawat-mock-up.png" alt="Rice Packet">
+                    </div>
+                </div>
+
+                <!-- Gate Card -->
+                <div
+                    class="bg-[#102861] lg:col-span-2 flex gap-4 items-center justify-around  rounded-lg md:rounded-3xl p-2">
+                    <div class="text-center space-y-3 md:space-y-8">
+                        <img src="c2-assets/india-gate-logo.png" alt="Card Logo">
+                        <button
+                            class="bg-[#2A4D97] px-[18px] text-white py-2 md:px-8 md:py-[14px] text-xs md:text-2xl rounded-lg">World's
+                            No.1 Rice</button>
+                        <h3 class="text-xl md:text-[39px]">UP to <span class="font-bold">40% OFF</span></h3>
+                    </div>
+                    <div>
+                        <img src="c2-assets/india-gate-mock-up.png" alt="Rice Packet">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
     </Main>
 
     <!--Footer Section -->
-    <footer>
 
+    <footer class="relative bg-[#179800] mt-72 lg:mt-96">
+
+        <div class="container mx-auto grid sm:items-center pt-[370px] pb-12 lg:pb-36 px-4 footer text-neutral-content">
+
+            <!-- Get News  -->
+            <div class="container sm:mx-auto absolute -top-60">
+                <div
+                    class="bg-[#EFEBE3] lg:container sm:mx-auto flex flex-col md:flex-row items-center gap-6 lg:gap-1 justify-around rounded-2xl lg:rounded-3xl px-1 lg:px-16 py-6 md:py-12">
+                    <div>
+                        <img src="c2-assets/vegetable-busket.png" alt="Vegetable Image">
+                    </div>
+                    <div class="text-center md:text-justify">
+                        <h3 class="text-[#179800] md:text-black font-bold md:font-semibold text-[26px] lg:text-4xl">Get
+                            Grocery News!</h3>
+                        <p class="text-black pt-3 md:pt-5 text-base md:text-xl">Exclusive training tips, ticks, product
+                            deals and more.</p>
+                        <form action="">
+                            <input type="email" placeholder="Enter email...."
+                                class="mt-5 mb-3 rounded-md lg:rounded-lg py-[6px] lg:py-3 pl-2 lg:pl-4 pr-20 lg:pr-64 lg:my-9" />
+                        </form>
+                        <button
+                            class="bg-[#179800] text-white px-6 lg:px-7 py-2 lg:py-[10px] text-sm lg:text-xl rounded-lg">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="">
+                <img src="c2-assets/logo-footer.png" alt="">
+                <p class="text-[#ffffffa6] lg:text-xl mt-3 pt-[10px]">"Nature's Platter - Where freshness meets quality.
+                    <br>
+                    Bringing you the finest produce, straight from the farm!"
+                </p>
+            </div>
+            <div class="cursor-pointer space-y-5 lg:space-y-8">
+                <a class="text-base lg:text-xl">Products</a>
+                <a class="text-base lg:text-xl ">Services</a>
+                <a class="text-base lg:text-xl">Contact Us</a>
+            </div>
+            <div class="lg:pt-28">
+                <a class="font-normal lg:font-medium text-sm lg:text-base">Follow Us</a>
+                <div class="cursor-pointer text-white space-x-4 align-text-bottom">
+                    <a href="#"><i class="fa-brands fa-square-github"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <aside class="footer text-neutral-content footer-center p-4">
+            <p>Copyright © 2025 - All right reserved by Nature's Platter Ltd</p>
+        </aside>
     </footer>
 
 </body>
